@@ -8,4 +8,7 @@ I recently found that many programmers may be unaware about the possibility to c
 See the example code in the src folder.
 
 # Explanations
-The example's EnumColors_Values type should be PRIVATE with todays compilers (as shown in the example code), but I believe to remember that Fortran 95 compilers (back in the 1990s) did require this to be PUBLIC.
+The example's EnumColors_Values type should be PRIVATE with today's compilers (as shown in the example code), but I believe to remember that Fortran 95 compilers (back in the 1990s) did require this to be PUBLIC.
+
+To make our (integer-based) enum type more safe to use, we choose somewhat more unique integer values for it, like that:
+TYPE (EnumColors_Values), PUBLIC, PARAMETER :: EnumColors = EnumColors_Values (157839,230972,387150)
