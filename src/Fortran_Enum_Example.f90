@@ -3,7 +3,7 @@ https://github.com/MichaelSiehl/How-to-Code-Enumerations-in-Fortran
 !**********************************************************
 MODULE Enumerations
 !***  Colors Enumeration:
-TYPE, PRIVATE :: EnumColors_Values
+TYPE, PRIVATE :: EnumColors_Values ! older compilers may require this to be PUBLIC
   INTEGER :: Blue ! = 157839
   INTEGER :: Red ! = 230972
   INTEGER :: Green ! = 387150
