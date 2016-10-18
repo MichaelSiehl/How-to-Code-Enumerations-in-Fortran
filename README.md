@@ -5,6 +5,7 @@ THIS REPOSITORY SHOWS A SIMPLE WAY TO CODE ENUMERATED TYPES IN FORTRAN
 I recently found that many programmers may be unaware about the possibility to code enums in Fortran. (For an example, see this entry in wikipedia: https://en.wikipedia.org/wiki/Enumerated_type#Fortran). The Fortran standard may not specifically mention it, but compilers, and thus the Fortran language, do easily allow to emulate integer-based enumerations since Fortran 95(/90?). The situation has even improved with newer compilers, see the example and explanations below.
 
 # Fortran Enum Example
+
 !**********************************************************
 MODULE Enumerations
 !***  Colors Enumeration:
@@ -29,6 +30,10 @@ END IF
 !
 END PROGRAM Main
 !**********************************************************
+
+
+
+
 
 # Explanations
 
