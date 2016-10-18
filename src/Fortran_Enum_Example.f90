@@ -10,7 +10,7 @@ TYPE, PRIVATE :: EnumColors_Values
 END TYPE EnumColors_Values
 !
 TYPE (EnumColors_Values), PUBLIC, PARAMETER :: EnumColors = EnumColors_Values (157839,230972,387150)
-!***
+!
 END MODULE Enumerations
 !**********************************************************
 PROGRAM Main
