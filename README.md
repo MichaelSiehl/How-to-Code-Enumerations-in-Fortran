@@ -13,3 +13,16 @@ The example's EnumColors_Values type should be PRIVATE with today's compilers (a
 
 To make our (integer-based) enum type more safe to use, we choose somewhat more unique integer values for it, like that:
 TYPE (EnumColors_Values), PUBLIC, PARAMETER :: EnumColors = EnumColors_Values (157839,230972,387150)
+
+The src folder does also contain the Fortran_2003_enum_example.f90, using Fortran 2003 enum, bind(c). With that, we found it helpful to use the first enumerator to name the enumeration (Colors):
+...
+public :: Colors, Blue, Red, Green
+enum, bind(c)
+  enumerator :: Colors = 0
+  enumerator :: Blue = 157839
+  enumerator :: Red = 230972
+  enumerator :: Green = 387150
+end enum
+...
+integer(kind(Colors)) :: MyColor
+MyColor = Green
