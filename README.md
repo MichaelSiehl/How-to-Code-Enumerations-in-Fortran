@@ -18,8 +18,8 @@ The src folder does also contain the Fortran_2003_enum_example.f90, using Fortra
 ...<br />
 public :: Colors, Blue, Red, Green<br />
 enum, bind(c)<br />
-  enumerator :: Colors = 0<br />
-  enumerator :: Blue = 157839  
+&nbsp;&nbsp;enumerator :: Colors = 0<br />
+&nbsp;&nbsp;enumerator :: Blue = 157839  
   enumerator :: Red = 230972  
   enumerator :: Green = 387150  
 end enum  
