@@ -20,8 +20,8 @@ public :: Colors, Blue, Red, Green<br />
 enum, bind(c)<br />
 &nbsp;&nbsp;enumerator :: Colors = 0<br />
 &nbsp;&nbsp;enumerator :: Blue = 157839  
-  enumerator :: Red = 230972  
-  enumerator :: Green = 387150  
+&nbsp;&nbsp;enumerator :: Red = 230972  
+&nbsp;&nbsp;enumerator :: Green = 387150  
 end enum  
 ...  
 integer(kind(Colors)) :: MyColor  
