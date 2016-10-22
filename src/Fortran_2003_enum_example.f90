@@ -6,7 +6,7 @@ private
 !***  Colors Enumeration:
 public :: Colors, Blue, Red, Green
 enum, bind(c)
-  enumerator :: Colors = 0
+  enumerator :: Colors = 0 ! we use this to name the enumeration
   enumerator :: Blue = 157839
   enumerator :: Red = 230972
   enumerator :: Green = 387150
